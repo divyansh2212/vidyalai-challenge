@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 function useWindowWidth() {
-  const [isSmallerDevice, setIsSmallerDevice] = useState(false);
+  const [isSmallerDevice, setIsSmallerDevice] = useState(null);
 
   useEffect(() => {
     const handleResize = () => {
